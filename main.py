@@ -13,4 +13,5 @@ masodikf.kiiras(lista)
 
 stadion_lista=harmadikf.file_olvasas()
 harmadikf.csapat_szam(stadion_lista)
-harmadikf.ny_csapatok(stadion_lista)
+ny_csap_lista=harmadikf.ny_csapatok(stadion_lista)
+harmadikf.ny_kiir(ny_csap_lista)

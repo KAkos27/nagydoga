@@ -33,8 +33,17 @@ def csapat_szam(lista):
 
 
 def ny_csapatok(lista):
+    kiirando_lista = []
+    kiiras_string = ""
     print("3. f)\n")
     for i in range(0, len(lista), 1):
         if lista[i].varos == "New York":
-            print(f"Stadion neve: {lista[i].stadion}")
-            print(f"Csapatok száma: {lista[i].csapatok_szama}")
+            kiiras_string = f"Stadion neve: {lista[i].stadion}, Csapatok száma: {lista[i].csapatok_szama}"
+            kiirando_lista.append(kiiras_string)
+
+    return kiirando_lista
+
+
+def ny_kiir(lista):
+    for i in range(0, len(lista), 1):
+        print(lista[i])
